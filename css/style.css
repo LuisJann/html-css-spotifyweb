@@ -1,5 +1,213 @@
+/* RESET */
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+}
+
+/* HTML */
+html{
+    font-size: 100%;
+}
+
+/* UTILITY */
+
+.size-s{
+    font-size: .8em;
+}
+
+.white{
+    color: white;
+}
+
+.light-grey{
+    color: lightgrey;
+}
+
+.padding-1{
+    padding: 1em;
+}
+
+.padding-l-1{
+    padding-left: 1em;
+}
+
+.margin-b-1{
+    margin-bottom: .5em;
+}
+
+
+/* SIDEBAR */
+.container-sidebar{
+    display: flex;
+    background-color: black;
+}
+
+
+.sidebar{
+    height: calc(100vh - 100px);
+    position: relative;
+}
+
+.logo{
+    width: 90%;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.logo-s{
+    display: none;
+    width: 40%;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.cta-side{
+    position: absolute;
+    bottom: 2px;
+    margin-left: 10px;
+}
+
+hr{
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.list-side{
+    list-style-type: none;
+}
+
+.list-item-side{
+    display: flex;
+}
+
+.icon{
+    width: 20%;
+    margin-right: 10px;
+}
+
+.profile-bar{
+    display: flex;
+    align-items: center;
+}
+
+.profile-img{
+    width: 30px;
+    height: 30px;
+    object-fit: fill;
+    background-color: #808080;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+/* RESPONSIVE AREA SIDE BAR */
+@media screen and (max-width: 600px) {
+    .logo{
+        display: none;
+    }
+
+    /* .list-side{
+        display: none;
+    } */
+
+    .playlist{
+        display: none;
+    }
+
+    .logo-s{
+        display: block;
+    }
+
+    .cta-side{
+        display: none;
+    }
+
+}
+
+/* MAIN */
+main{
+    background-color: #141923;
+}
+
+.container-main{
+    height: calc(100vh - 100px);
+    margin-bottom: 150px;
+}
+
+.upgrade{
+    background-color: #0a0b13;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button-upgrade{
+   border: 2px solid white;
+   border-radius: 20px;
+   padding: 10px 20px 10px 20px;
+   color: white;
+   text-decoration: none;
+}
+
+.list-main{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+
+.recently-played{
+    display: flex;
+    width: 100%
+}
+
+.card-album{
+    width: calc(100% / 6 - 20px);
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+    /* DEBUG */
+    /* background-color: white; */
+}
+
+.img-card{
+    width: 100%;
+}
+
+/* RESPONSIVE AREA MAIN */
+
+@media screen and (max-width: 700px) {
+    .recently-played{
+        flex-wrap: wrap;
+    }
+    
+    .card-album{
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-album{
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+
+/* FOOTER */
+.media-player{
+    background-color: #282828;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
