@@ -8,12 +8,17 @@
 /* HTML */
 html{
     font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* UTILITY */
 
 .size-s{
     font-size: .8em;
+}
+
+.size-xs{
+    font-size: .6em;
 }
 
 .white{
@@ -40,13 +45,19 @@ html{
 /* SIDEBAR */
 .container-sidebar{
     display: flex;
-    background-color: black;
 }
 
 
 .sidebar{
-    height: calc(100vh - 100px);
+    background-color: black;
+    height: calc(100% - 100px);
+    min-height: 550px;
+    width: 150px;
     position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
 }
 
 .logo{
@@ -58,7 +69,7 @@ html{
 .logo-s{
     display: none;
     width: 40%;
-    padding-left: 1em;
+    margin-left: 15px;
     padding-top: 1em;
 }
 
@@ -79,6 +90,7 @@ hr{
 
 .list-item-side{
     display: flex;
+    align-items: center;
 }
 
 .icon{
@@ -92,12 +104,12 @@ hr{
 }
 
 .profile-img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     object-fit: fill;
     background-color: #808080;
     border-radius: 50%;
-    padding: 3px;
+    padding: 1px;
 }
 
 
@@ -107,9 +119,9 @@ hr{
         display: none;
     }
 
-    /* .list-side{
+    .list-side{
         display: none;
-    } */
+    }
 
     .playlist{
         display: none;
@@ -117,10 +129,20 @@ hr{
 
     .logo-s{
         display: block;
+        width: 100%;
     }
 
     .cta-side{
         display: none;
+    }
+
+    .sidebar{
+        width: 50px;
+        height: 100%;
+    }
+
+    img.margin-b-1{
+        margin-right: 25px;
     }
 
 }
@@ -128,20 +150,30 @@ hr{
 /* MAIN */
 main{
     background-color: #141923;
+    width: 100%;
+    min-width: 500px;
 }
 
 .container-main{
-    height: calc(100vh - 100px);
+    height: calc(100% - 100px);
+    width: calc(100% - 150px);
     margin-bottom: 150px;
+    margin-left: 150px;
+    margin-top: 70px;
 }
 
 .upgrade{
-    background-color: #0a0b13;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 60px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: fixed;
+    z-index: 997;
+    top: 0%;
+    right: 0%;
+    overflow-y: auto;
 }
 
 .button-upgrade{
@@ -150,13 +182,16 @@ main{
    padding: 10px 20px 10px 20px;
    color: white;
    text-decoration: none;
+   font-size: .8em;
 }
 
 .list-main{
     display: flex;
-    width: 50%;
+    width: 80%;
+    justify-content: center;
     margin: 0 auto;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 
@@ -166,7 +201,7 @@ main{
 }
 
 .card-album{
-    width: calc(100% / 6 - 20px);
+    width: calc(100% / 6);
     margin-left: 10px;
     margin-top: 10px;
     text-align: center;
@@ -189,12 +224,25 @@ main{
     .card-album{
         width: calc(100% / 4 - 20px);
     }
+
+
 }
 
 @media screen and (max-width: 600px) {
     .card-album{
         width: calc(100% / 2 - 20px);
     }
+
+    .upgrade{
+        width: 100%;
+    }
+
+    .container-main{
+        width: calc(100% - 50px);
+        margin-left: 50px;
+    }
+
+   
 }
 
 
