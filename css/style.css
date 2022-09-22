@@ -12,6 +12,13 @@ html{
 }
 
 /* UTILITY */
+.size{
+    font-size: 1.5em;
+}
+
+.size-m{
+    font-size: 1em;
+}
 
 .size-s{
     font-size: .8em;
@@ -26,7 +33,7 @@ html{
 }
 
 .light-grey{
-    color: lightgrey;
+    color: #5a5a5a;
 }
 
 .padding-1{
@@ -102,10 +109,15 @@ hr{
     color: white;
 }
 
+.list-side li:hover .icon{
+    border-left: 1px solid greenyellow;
+}
+
 .icon{
     width: 20%;
     margin-right: 10px;
 }
+
 
 .profile-bar{
     display: flex;
@@ -119,6 +131,10 @@ hr{
     background-color: #808080;
     border-radius: 50%;
     padding: 1px;
+}
+
+.playlist:hover{
+    color: white;
 }
 
 
@@ -152,6 +168,11 @@ hr{
 
     img.margin-b-1{
         margin-right: 25px;
+    }
+/* NON FUNZIONA */
+    .profile-img{
+        display: block;
+        width: 50px;
     }
 
 }
@@ -209,6 +230,7 @@ main{
 }
 
 .border-b:hover{
+    color: white;
     border-bottom: 1px solid greenyellow;
 }
 
@@ -287,7 +309,6 @@ main{
 .footer-left{
     display: flex;
     width: 250px;
-    background-color: aqua;
 }
 
 .footer-text-left{
@@ -303,12 +324,39 @@ main{
 }
 
 .footer-middle{
+    
+}
+
+.music-player{
     text-align: center;
+    border: 2px solid #5a5a5a;
+    width: 350px;
+    margin: 0 20px 0 20px;
+    border-radius: 30px;
 }
 
 .footer-right{
     width: 250px;
     text-align: right;
 
-    background-color: aqua;
+}
+
+.music-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-bar{
+    display: flex;
+    align-items: center;
+}
+
+.music-button{
+    display: flex;
+    align-items: center;
+}
+
+.play-button{
+    padding-right: 5px;
 }
