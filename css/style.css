@@ -52,12 +52,18 @@ html{
     background-color: black;
     height: calc(100% - 100px);
     min-height: 550px;
-    width: 150px;
+    width: 160px;
     position: relative;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 998;
+}
+
+.plus-icon{
+    font-size: 2.5em;
+    vertical-align: middle;
+    padding-right: 5px;
 }
 
 .logo{
@@ -151,7 +157,7 @@ hr{
 main{
     background-color: #141923;
     width: 100%;
-    min-width: 500px;
+    /* min-width: 500px; */
 }
 
 .container-main{
@@ -194,10 +200,15 @@ main{
     flex-wrap: wrap;
 }
 
+.border-b:hover{
+    border-bottom: 1px solid greenyellow;
+}
+
 
 .recently-played{
     display: flex;
-    width: 100%
+    width: 100%;
+    padding: 0 1em 0 1em;
 }
 
 .card-album{
@@ -212,6 +223,11 @@ main{
 
 .img-card{
     width: 100%;
+}
+
+.img-card-circle{
+    width: 100%;
+    border-radius: 50%;
 }
 
 /* RESPONSIVE AREA MAIN */
