@@ -98,6 +98,10 @@ hr{
     align-items: center;
 }
 
+.list-side li:hover{
+    color: white;
+}
+
 .icon{
     width: 20%;
     margin-right: 10px;
@@ -188,6 +192,11 @@ main{
    color: white;
    text-decoration: none;
    font-size: .8em;
+    margin-right: 15px;
+}
+
+.button-upgrade:hover{
+    transform: scale(1.1);
 }
 
 .list-main{
