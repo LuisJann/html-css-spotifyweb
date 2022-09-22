@@ -157,7 +157,7 @@ hr{
 main{
     background-color: #141923;
     width: 100%;
-    /* min-width: 500px; */
+    min-width: 500px;
 }
 
 .container-main{
