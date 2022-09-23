@@ -121,6 +121,7 @@ hr{
 .icon{
     width: 20%;
     margin-right: 10px;
+
 }
 
 
@@ -257,9 +258,6 @@ main{
     margin-left: 10px;
     margin-top: 10px;
     text-align: center;
-
-    /* DEBUG */
-    /* background-color: white; */
 }
 
 .button-music-card{
