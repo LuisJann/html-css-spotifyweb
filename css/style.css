@@ -308,7 +308,7 @@ main{
 
 .footer-left{
     display: flex;
-    width: 250px;
+    width: 30%;
 }
 
 .footer-text-left{
@@ -323,33 +323,37 @@ main{
     margin-left: 10px;
 }
 
-.footer-middle{
-    
-}
-
 .music-player{
     text-align: center;
     border: 2px solid #5a5a5a;
-    width: 350px;
+    width: 90%;
     margin: 0 20px 0 20px;
     border-radius: 30px;
 }
 
 .footer-right{
-    width: 250px;
+    width: 30%;
     text-align: right;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .music-control{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
+}
+
+.footer-middle{
+    width: 100%;
 }
 
 .music-bar{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .music-button{
@@ -359,4 +363,58 @@ main{
 
 .play-button{
     padding-right: 5px;
+}
+
+.play-button:hover{
+    transform: scale(1.2);
+}
+
+.time-player{
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.time-player:hover{
+    border: 2px solid greenyellow;
+}
+
+.footer-icon-left{
+    margin-right: 30px;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+}
+
+.volume-player{
+    border: 2px solid #5a5a5a;
+    width: 30%;
+    margin: 0 20px 0 20px;
+    border-radius: 30px;
+}
+
+.footer-icon-right{
+    display: flex;
+    align-items: center;
+}
+
+/* RESPONSIVE AREA FOOTER */
+
+@media screen and (max-width: 600px) {
+    .footer-icon-left{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+   .footer-icon-right{
+    font-size: .8em;
+   }
 }
