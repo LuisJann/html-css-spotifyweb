@@ -12,6 +12,10 @@ html{
 }
 
 /* UTILITY */
+.size-l{
+    font-size: 3em;
+}
+
 .size{
     font-size: 1.5em;
 }
@@ -220,6 +224,7 @@ main{
     transform: scale(1.1);
 }
 
+
 .list-main{
     display: flex;
     width: 80%;
@@ -242,6 +247,7 @@ main{
 }
 
 .card-album{
+    position: relative;
     width: calc(100% / 6);
     margin-left: 10px;
     margin-top: 10px;
@@ -251,6 +257,19 @@ main{
     /* background-color: white; */
 }
 
+.button-music-card{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.card-album:hover .button-music-card{
+    display: block;
+}
+
+
 .img-card{
     width: 100%;
 }
@@ -259,6 +278,13 @@ main{
     width: 100%;
     border-radius: 50%;
 }
+
+
+.img-album{
+    width: 100%;
+    position: relative;
+}
+
 
 /* RESPONSIVE AREA MAIN */
 
@@ -271,7 +297,10 @@ main{
         width: calc(100% / 4 - 20px);
     }
 
-
+    /* .button-music-card{
+        top: 35px;
+        left: 35px;
+    } */
 }
 
 @media screen and (max-width: 600px) {
@@ -287,8 +316,11 @@ main{
         width: calc(100% - 50px);
         margin-left: 50px;
     }
-
-   
+/* 
+   .button-music-card{
+    top: 100px;
+    left: 100px;
+   } */
 }
 
 
@@ -384,6 +416,15 @@ main{
     display: flex;
     margin-left: 10px;
     align-items: center;
+}
+
+.icon-left:hover{
+    color: white;
+}
+
+.name-music:hover{
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 .circle{
