@@ -12,6 +12,7 @@ html{
 }
 
 /* UTILITY */
+
 .size-l{
     font-size: 3em;
 }
@@ -141,6 +142,10 @@ hr{
     color: white;
 }
 
+
+.cta-sidebar:hover{
+    color: white;
+}
 
 /* RESPONSIVE AREA SIDE BAR */
 @media screen and (max-width: 600px) {
@@ -285,6 +290,9 @@ main{
     position: relative;
 }
 
+.img-card:hover{
+    opacity: 1;
+}
 
 /* RESPONSIVE AREA MAIN */
 
@@ -316,11 +324,6 @@ main{
         width: calc(100% - 50px);
         margin-left: 50px;
     }
-/* 
-   .button-music-card{
-    top: 100px;
-    left: 100px;
-   } */
 }
 
 
@@ -341,6 +344,7 @@ main{
 .footer-left{
     display: flex;
     width: 30%;
+    margin-right: 20px;
 }
 
 .footer-text-left{
@@ -353,6 +357,8 @@ main{
     width: 15%;
     margin-right: 10px;
     margin-left: 10px;
+    max-width: 100px;
+    min-width: 50px;
 }
 
 .music-player{
@@ -369,6 +375,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-left: 20px;
 }
 
 .music-control{
@@ -380,6 +387,7 @@ main{
 
 .footer-middle{
     width: 100%;
+    margin-right: 10px;
 }
 
 .music-bar{
@@ -391,6 +399,8 @@ main{
 .music-button{
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .play-button{
@@ -405,6 +415,15 @@ main{
     width: 30%;
     border: 2px solid white;
     border-radius: 30px;
+    position: relative;
+}
+
+.time.song{
+    width: 100%;
+}
+
+.time-player:hover .circle{
+    display: block;
 }
 
 .time-player:hover{
@@ -414,8 +433,8 @@ main{
 .footer-icon-left{
     margin-right: 30px;
     display: flex;
-    margin-left: 10px;
     align-items: center;
+    margin-left: 3px;
 }
 
 .icon-left:hover{
@@ -444,6 +463,17 @@ main{
 .footer-icon-right{
     display: flex;
     align-items: center;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    bottom: -5px;
+    display: none;
 }
 
 /* RESPONSIVE AREA FOOTER */
