@@ -13,6 +13,10 @@ html{
 
 /* UTILITY */
 
+.opacity{
+    opacity: .3;
+}
+
 .size-l{
     font-size: 3em;
 }
@@ -141,6 +145,10 @@ hr{
     background-color: #808080;
     border-radius: 50%;
     padding: 1px;
+}
+
+.opacity:hover{
+    opacity: 1;
 }
 
 .playlist:hover{
