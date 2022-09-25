@@ -115,13 +115,17 @@ hr{
 }
 
 .list-side li:hover .icon{
+    opacity: 1;
+}
+
+.list-side li:hover .icon{
     border-left: 1px solid greenyellow;
 }
 
 .icon{
     width: 20%;
     margin-right: 10px;
-
+    opacity: .3;
 }
 
 
