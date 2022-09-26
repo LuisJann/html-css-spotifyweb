@@ -12,6 +12,9 @@ html{
 }
 
 /* UTILITY */
+.padding-l-r{
+    padding: 0 10px 0 10px;
+}
 
 .opacity{
     opacity: .3;
@@ -116,6 +119,7 @@ hr{
 
 .list-side li:hover{
     color: white;
+    cursor: pointer;
 }
 
 .list-side li:hover .icon{
@@ -124,6 +128,7 @@ hr{
 
 .list-side li:hover .icon{
     border-left: 1px solid greenyellow;
+    cursor: pointer;
 }
 
 .icon{
@@ -149,15 +154,18 @@ hr{
 
 .opacity:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 .playlist:hover{
     color: white;
+    cursor: pointer;
 }
 
 
 .cta-sidebar:hover{
     color: white;
+    cursor: pointer;
 }
 
 /* RESPONSIVE AREA SIDE BAR */
@@ -190,11 +198,6 @@ hr{
 
     img.margin-b-1{
         margin-right: 25px;
-    }
-/* NON FUNZIONA */
-    .profile-img{
-        display: block;
-        width: 50px;
     }
 
 }
@@ -255,6 +258,7 @@ main{
 .border-b:hover{
     color: white;
     border-bottom: 1px solid greenyellow;
+    cursor: pointer;
 }
 
 
@@ -282,12 +286,14 @@ main{
 
 .card-album:hover .button-music-card{
     display: block;
+    cursor: pointer;
 }
 
 
 .img-card{
     width: 100%;
 }
+
 
 .img-card-circle{
     width: 100%;
@@ -300,9 +306,7 @@ main{
     position: relative;
 }
 
-.img-card:hover{
-    opacity: 1;
-}
+
 
 /* RESPONSIVE AREA MAIN */
 
@@ -314,11 +318,6 @@ main{
     .card-album{
         width: calc(100% / 4 - 20px);
     }
-
-    /* .button-music-card{
-        top: 35px;
-        left: 35px;
-    } */
 }
 
 @media screen and (max-width: 600px) {
@@ -375,7 +374,7 @@ main{
     text-align: center;
     border: 2px solid #5a5a5a;
     width: 90%;
-    margin: 0 20px 0 20px;
+    margin: 0 auto;
     border-radius: 30px;
 }
 
@@ -397,7 +396,6 @@ main{
 
 .footer-middle{
     width: 100%;
-    margin-right: 10px;
 }
 
 .music-bar{
@@ -411,6 +409,7 @@ main{
     align-items: center;
     width: 100%;
     justify-content: center;
+
 }
 
 .play-button{
@@ -430,6 +429,7 @@ main{
 
 .time.song{
     width: 100%;
+    margin: 0 auto;
 }
 
 .time-player:hover .circle{
@@ -438,6 +438,7 @@ main{
 
 .time-player:hover{
     border: 2px solid greenyellow;
+    cursor: pointer;
 }
 
 .footer-icon-left{
